@@ -2,7 +2,7 @@
 
 Implementation of 3DViewer, program to view 3D wireframe models in the C++ programming language in the object-oriented programming paradigm. The models themselves loaded from .obj files and be viewable on the screen with the ability to rotate, scale and translate.
 ___
-<img src="img/1.png" width="800" height="460" alt="Main window"> 
+![1](img/1.png)
 
 ## Main part
 
@@ -35,7 +35,7 @@ Developing a program to visualise the 3D wireframe models.
     - controllers thin
 - There at least three design patterns: facade, strategy and singleton
 
-<img src="img/2.png" width="800" height="460" alt="Settings">
+![2](img/2.png)
 
 ## Settings
 
@@ -53,4 +53,4 @@ Developing a program to visualise the 3D wireframe models.
 
  ___
  
-<img src="img/3.GIF" width="800" height="600" alt="Gif"> 
+![3](img/3.GIF)
