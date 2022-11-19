@@ -1,5 +1,5 @@
-#ifndef SRC_FACADE_HPP_
-#define SRC_FACADE_HPP_
+#ifndef SRC_FACADE_H_
+#define SRC_FACADE_H_
 
 #include "mainwidget.h"
 #include "ui_mainwindow.h"
@@ -149,4 +149,4 @@ public:
 };
 }  //  namespace s21
 
-#endif  //  SRC_FACADE_HPP_
+#endif  //  SRC_FACADE_H_

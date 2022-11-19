@@ -1,5 +1,5 @@
-#ifndef SRC_CONTROLLER_HPP_
-#define SRC_CONTROLLER_HPP_
+#ifndef SRC_CONTROLLER_H_
+#define SRC_CONTROLLER_H_
 
 #include "../model/affin.h"
 
@@ -33,4 +33,4 @@ private:
 
 }  // namespace s21
 
-#endif  //  SRC_CONTROLLER_HPP_
+#endif  //  SRC_CONTROLLER_H_

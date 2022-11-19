@@ -1,5 +1,5 @@
-#ifndef SRC_MODEL_HPP_
-#define SRC_MODEL_HPP_
+#ifndef SRC_MODEL_H_
+#define SRC_MODEL_H_
 
 #include <cstdio>
 #include <iostream>
@@ -32,4 +32,4 @@ private:
 };
 }  //  namespace s21
 
-#endif  //  SRC_MODEL_HPP_
+#endif  //  SRC_MODEL_H_

@@ -21,7 +21,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::file_dialog()
 {
-     QString filename = QFileDialog::getOpenFileName(this, tr("Open File"), "../../../../../src/obj/.", "*.obj");
+     QString filename = QFileDialog::getOpenFileName(this, tr("Open File"), "../obj/.", "*.obj");
      if (!filename.isEmpty()) {
          default_params1();
          default_params2();
@@ -186,12 +186,24 @@ void MainWindow::on_vertexes_color_button_clicked()
 
 
 
-void MainWindow::on_move_x_slider_valueChanged(int value) { facade.Move(s21::ChangeModel::kMoveX, (double)value/100, 1, *ui); }
-void MainWindow::on_move_x_box_valueChanged(double arg1) { facade.Move(s21::ChangeModel::kMoveX, arg1, 0, *ui); }
-void MainWindow::on_move_y_slider_valueChanged(int value) { facade.Move(s21::ChangeModel::kMoveY, (double)value/100, 1, *ui); }
-void MainWindow::on_move_y_box_valueChanged(double arg1) { facade.Move(s21::ChangeModel::kMoveY, arg1, 0, *ui); }
-void MainWindow::on_move_z_slider_valueChanged(int value) { facade.Move(s21::ChangeModel::kMoveZ, (double)value/100, 1, *ui); }
-void MainWindow::on_move_z_box_valueChanged(double arg1) { facade.Move(s21::ChangeModel::kMoveZ, arg1, 0, *ui); }
+void MainWindow::on_move_x_slider_valueChanged(int value) {
+	facade.Move(s21::ChangeModel::kMoveX, (double)value/100, 1, *ui);
+}
+void MainWindow::on_move_x_box_valueChanged(double arg1) {
+	facade.Move(s21::ChangeModel::kMoveX, arg1, 0, *ui);
+}
+void MainWindow::on_move_y_slider_valueChanged(int value) {
+	facade.Move(s21::ChangeModel::kMoveY, (double)value/100, 1, *ui);
+}
+void MainWindow::on_move_y_box_valueChanged(double arg1) {
+	facade.Move(s21::ChangeModel::kMoveY, arg1, 0, *ui);
+}
+void MainWindow::on_move_z_slider_valueChanged(int value) {
+	facade.Move(s21::ChangeModel::kMoveZ, (double)value/100, 1, *ui);
+}
+void MainWindow::on_move_z_box_valueChanged(double arg1) {
+	facade.Move(s21::ChangeModel::kMoveZ, arg1, 0, *ui);
+}
 
 
 
@@ -202,11 +214,21 @@ void MainWindow::on_move_z_box_valueChanged(double arg1) { facade.Move(s21::Chan
 void MainWindow::on_rotate_x_slider_valueChanged(int value) { 
 	facade.Rotate(s21::ChangeModel::kRotateX, (double)value/100, 1, *ui); 
 }
-void MainWindow::on_rotate_x_box_valueChanged(double arg1) { facade.Rotate(s21::ChangeModel::kRotateX, arg1, 0, *ui); }
-void MainWindow::on_rotate_y_slider_valueChanged(int value) { facade.Rotate(s21::ChangeModel::kRotateY, (double)value/100, 1, *ui); }
-void MainWindow::on_rotate_y_box_valueChanged(double arg1) { facade.Rotate(s21::ChangeModel::kRotateY, arg1, 0, *ui); }
-void MainWindow::on_rotate_z_slider_valueChanged(int value) { facade.Rotate(s21::ChangeModel::kRotateZ, (double)value/100, 1, *ui); }
-void MainWindow::on_rotate_z_box_valueChanged(double arg1) { facade.Rotate(s21::ChangeModel::kRotateZ, arg1, 0, *ui); }
+void MainWindow::on_rotate_x_box_valueChanged(double arg1) {
+	facade.Rotate(s21::ChangeModel::kRotateX, arg1, 0, *ui);
+}
+void MainWindow::on_rotate_y_slider_valueChanged(int value) {
+	facade.Rotate(s21::ChangeModel::kRotateY, (double)value/100, 1, *ui);
+}
+void MainWindow::on_rotate_y_box_valueChanged(double arg1) {
+	facade.Rotate(s21::ChangeModel::kRotateY, arg1, 0, *ui);
+}
+void MainWindow::on_rotate_z_slider_valueChanged(int value) {
+	facade.Rotate(s21::ChangeModel::kRotateZ, (double)value/100, 1, *ui);
+}
+void MainWindow::on_rotate_z_box_valueChanged(double arg1) {
+	facade.Rotate(s21::ChangeModel::kRotateZ, arg1, 0, *ui);
+}
 
 
 
@@ -214,8 +236,12 @@ void MainWindow::on_rotate_z_box_valueChanged(double arg1) { facade.Rotate(s21::
 
 
 
-void MainWindow::on_scale_slider_valueChanged(int value) { facade.Scale((double)value/100, 1, *ui); }
-void MainWindow::on_scale_box_valueChanged(double arg1) { facade.Scale(arg1, 0, *ui); }
+void MainWindow::on_scale_slider_valueChanged(int value) {
+	facade.Scale((double)value/100, 1, *ui);
+}
+void MainWindow::on_scale_box_valueChanged(double arg1) {
+	facade.Scale(arg1, 0, *ui);
+}
 
 
 ////////////////////////////

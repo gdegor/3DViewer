@@ -4,12 +4,12 @@
 #include <QOpenGLWidget>
 #include <QOpenGLFunctions>
 #include <QMatrix4x4>
-#include <QQuaternion>
+// #include <QQuaternion>
 #include <QVector2D>
 #include <QBasicTimer>
 #include <QOpenGLShaderProgram>
 #include <QOpenGLTexture>
-#include <QMouseEvent>
+// #include <QMouseEvent>
 #include <cmath>
 
 #include "geometryengine.h"

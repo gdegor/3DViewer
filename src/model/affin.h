@@ -1,5 +1,5 @@
-#ifndef SRC_AFFIN_HPP_
-#define SRC_AFFIN_HPP_
+#ifndef SRC_AFFIN_H_
+#define SRC_AFFIN_H_
 
 #include "model.h"
 
@@ -38,5 +38,5 @@ private:
 };
 }  //  namespace s21
 
-#endif  //  SRC_AFFIN_HPP_
+#endif  //  SRC_AFFIN_H_
 

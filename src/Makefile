@@ -1,4 +1,5 @@
-CPP = g++ -std=c++17 -Wall -Werror -Wextra
+CXX = g++
+FLAGS = -std=c++17 -Wall -Werror -Wextra
 GCOV = --coverage
 CHECK= -lgtest
 BD = build
@@ -6,7 +7,7 @@ BD = build
 all: clean test
 
 test: clean
-	$(CPP) model/model.cc model/affin.cc model/model_test.cc $(CHECK) -o test
+	$(CXX) $(FLAGS) model/model.cc model/affin.cc model/model_test.cc $(CHECK) -o test
 	./test
 
 build: clean 
